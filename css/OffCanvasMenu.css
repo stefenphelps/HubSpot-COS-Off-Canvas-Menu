@@ -13,9 +13,7 @@
     background: #fff;
     padding: 1em;
     font-size: 1.15em;
-    -webkit-transform: translate3d(-320px,0,0);
     transform: translate3d(-320px,0,0);
-    -webkit-transition: -webkit-transform 250ms;
     transition: transform 250ms ease;
     box-shadow: 1px 6px 8px rgba(0, 0, 0, 0.24);
     overflow-x: scroll;
@@ -23,7 +21,6 @@
 
 /* Show menu */
 .show-menu .row-fluid > .off-canvas-menu {
-    -webkit-transform: translate3d(0,0,0);
 	transform: translate3d(0,0,0);
 }
 .row-fluid > .off-canvas-menu a { 
@@ -34,24 +31,12 @@
 
 /* Second level menu */
 .off-canvas-menu .hs-menu-depth-1.hs-item-has-children {
-    -webkit-perspective: 1000px;
-    -moz-perspective: 1000px;
     perspective: 1000px;
 }
 .off-canvas-menu .hs-menu-depth-1 > ul.hs-menu-children-wrapper {
-    -webkit-transform-origin: 50% 0;
-    -moz-transform-origin: 50% 0;
-    -ms-transform-origin: 50% 0;
     transform-origin: 50% 0;
-    -webkit-transform-style: preserve-3d;
-    -moz-transform-style: preserve-3d;
-    -ms-transform-style: preserve-3d;
     transform-style: preserve-3d;
-    -webkit-transform: scale(1,0) rotateX(-90deg);
-    -moz-transform: scale(1,0) rotateX(-90deg);
-    -ms-transform: scale(1,.01);
     transform: scale(1,0) rotateX(-90deg);
-    -webkit-transition: all .2s ease;
     transition: all .2s ease;
     opacity: 0 !important;
     max-height: 0;
@@ -59,9 +44,6 @@
 
 /* Show menu second level menu */
 .off-canvas-menu .hs-menu-depth-1.show-menu > ul.hs-menu-children-wrapper {
-    -webkit-transform: scale(1,1) rotateX(0deg);
-    -moz-transform: scale(1,1) rotateX(0deg);
-    -ms-transform: scale(1,1);
     transform: scale(1,1) rotateX(0deg);
     opacity: 1 !important;
     max-height: 220px;
@@ -79,12 +61,10 @@
     position: absolute;
     top: 1.2em;
     right: 1em;
-    -webkit-transform: rotate(0);
     transform: rotate(0);
     transition: all 500ms;
 }
 .off-canvas-menu .hs-menu-depth-1.hs-item-has-children.show-menu > a:after {
-    -webkit-transform: rotate(180deg);
     transform: rotate(180deg);
 }
 
