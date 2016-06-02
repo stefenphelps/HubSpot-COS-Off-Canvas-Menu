@@ -7,7 +7,7 @@ An easy way to implement an off-canvas menu using the HubSpot COS.
 * Extremely easy HubSpot COS set-up
 
 ## Getting Started
-* Add the styles.css and main.js to your page.
+* Add the OffCanvasMenu.css and OffCanvasMenu.js to your page.
 * Add an Advanced Menu module to the template and give it a class "off-canvas-menu".
 * Add a link with the class "menu-toggle" on your page e.g.
 ```html 
