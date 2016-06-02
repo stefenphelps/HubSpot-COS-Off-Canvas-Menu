@@ -14,3 +14,7 @@ An easy way to implement an off-canvas menu using the HubSpot COS.
 ```html 
 <a href="#" class="menu-toggle">Menu</a>
 ```
+
+## Dependencies
+* jQuery 1.7+
+* HubSpot COS website
