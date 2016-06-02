@@ -71,5 +71,8 @@
 /* for demo purposes only - you'll need to style and position your menu button yourself */
 .menu-toggle {
     display: block;
-    text-align: right;
+    text-align: center;
+    padding: 2em;
+    background: #eee;
+    margin: 2em;
 }

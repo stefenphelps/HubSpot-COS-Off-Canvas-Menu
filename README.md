@@ -1,6 +1,8 @@
 # HubSpot COS Off-Canvas Menu
 An easy way to implement an off-canvas menu using the HubSpot COS.
 
+[Demo](http://rawgit.com/stefenphelps/Hubspot-COS-Off-Canvas-Menu/master/index.html)
+
 ## Features
 * CSS Transitions using translate3d for 60fps animations
 * Less than 3kb
