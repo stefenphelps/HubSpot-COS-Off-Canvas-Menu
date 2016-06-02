@@ -1,22 +1,21 @@
 /* ==========================================================================
 
-
     Off-Canvas Menu                              
-
 
    ========================================================================== */
 .row-fluid > .off-canvas-menu {
     position: fixed;
     z-index: 1001;
-    width: 300px;
     height: 100%;
+    width: 100%;
+    min-width: 200px;
+    max-width: 300px;
     background: #fff;
     padding: 1em;
     font-size: 1.15em;
-    transform: translate3d(-320px,0,0);
-    transition: transform 250ms ease;
     box-shadow: 1px 6px 8px rgba(0, 0, 0, 0.24);
     overflow-x: scroll;
+    transition: transform 250ms ease;
 }
 
 /* Show menu */
@@ -38,22 +37,20 @@
     transform-style: preserve-3d;
     transform: scale(1,0) rotateX(-90deg);
     transition: all .2s ease;
-    opacity: 0 !important;
+    opacity: 0 !important; /* important to overwrite hubspot styles */
     max-height: 0;
 }
 
-/* Show menu second level menu */
+/* Show second level menu */
 .off-canvas-menu .hs-menu-depth-1.show-menu > ul.hs-menu-children-wrapper {
     transform: scale(1,1) rotateX(0deg);
-    opacity: 1 !important;
-    max-height: 220px;
+    opacity: 1 !important; /* important to overwrite hubspot styles */
+    max-height: 220px; /* hack to animate height - change this if your second level menu is taller than 220px */
 }
 .off-canvas-menu .hs-menu-depth-1.hs-item-has-children > a:after {
     display: inline-block;
     width: 0px;
     height: 0px;
-    margin-left: 6px;
-    vertical-align: middle;
     border-top: 4px dashed ;
     border-right: 4px solid transparent;
     border-left: 4px solid transparent;
