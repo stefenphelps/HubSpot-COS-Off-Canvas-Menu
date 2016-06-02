@@ -15,6 +15,7 @@
     font-size: 1.15em;
     box-shadow: 1px 6px 8px rgba(0, 0, 0, 0.24);
     overflow-x: scroll;
+    transform: translate3d(-300px,0,0);
     transition: transform 250ms ease;
 }
 
