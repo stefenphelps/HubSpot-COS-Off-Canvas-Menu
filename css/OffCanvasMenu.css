@@ -6,6 +6,7 @@
 .row-fluid > .off-canvas-menu {
     position: fixed;
     z-index: 1001;
+    top: 0;
     height: 100%;
     width: 100%;
     min-width: 200px;
@@ -14,7 +15,6 @@
     padding: 1em;
     font-size: 1.15em;
     box-shadow: 1px 6px 8px rgba(0, 0, 0, 0);
-    overflow-x: scroll;
     transform: translate3d(-300px,0,0);
     transition: all 250ms ease;
 }
@@ -49,6 +49,9 @@
     opacity: 1 !important; /* important to overwrite hubspot styles */
     max-height: 220px; /* hack to animate height - change this if your second level menu is taller than 220px */
 }
+.off-canvas-menu .hs-menu-depth-1.hs-item-has-children {
+	padding-right: 0.5em;
+}
 .off-canvas-menu .hs-menu-depth-1.hs-item-has-children > a:after {
     display: inline-block;
     width: 0px;
@@ -59,19 +62,10 @@
     content: " ";
     position: absolute;
     top: 1.2em;
-    right: 1em;
+    right: 0.5em;
     transform: rotate(0);
     transition: all 500ms;
 }
 .off-canvas-menu .hs-menu-depth-1.hs-item-has-children.show-menu > a:after {
     transform: rotate(180deg);
-}
-
-/* for demo purposes only - you'll need to style and position your menu button yourself */
-.menu-toggle {
-    display: block;
-    text-align: center;
-    padding: 2em;
-    background: #eee;
-    margin: 2em;
 }
