@@ -19,6 +19,7 @@
     box-shadow: 1px 6px 8px rgba(0, 0, 0, 0);
     transform: translate3d(-300px,0,0);
     transition: all 250ms ease;
+    will-change: transform;
 }
 
 /* Show menu */
@@ -43,6 +44,7 @@
     transition: all .2s ease;
     opacity: 0 !important; /* important to overwrite hubspot styles */
     max-height: 0;
+    will-change: transform;
 }
 
 /* Show second level menu */
