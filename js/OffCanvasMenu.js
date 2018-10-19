@@ -1,5 +1,5 @@
-    /////////////////////// Off-Canvas Menu
-    
+/////////////////////// Off-Canvas Menu
+$(function() {    
     // Toggle Menu
     $('.menu-toggle').on('click', function(e){
         e.stopPropagation();
@@ -17,3 +17,4 @@
         $(this).parent().toggleClass('show-menu');
         return false;
     });
+});
